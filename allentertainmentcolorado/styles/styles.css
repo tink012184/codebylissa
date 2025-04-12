@@ -1,0 +1,150 @@
+/* reset rules */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Base Layout */
+header {
+  background-color: #fcf1dd;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-logo img {
+  height: 150px;
+}
+
+.header-logo span {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.header-nav {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-size: 1.25rem;
+  align-items: center;
+  background-color: #da3f7c;
+}
+
+.header-nav a {
+  width: 100%;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  border-top: 1px solid #fcf1dd;
+  text-align: center;
+  padding: 20px;
+}
+
+.header-nav a:hover {
+  color: #749a31;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+.highlight {
+  color: #749a31;
+}
+
+.callToAction {
+  color: #9956ae;
+}
+
+p {
+  font-family: "Atkinson Hyperlegible Next", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #749a31;
+}
+
+/* Desktop Styles */
+@media (min-width: 640px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header-logo {
+    margin-bottom: 0;
+    height: 150px;
+  }
+
+  .header-nav {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: flex-end;
+  }
+
+  .header-nav a {
+    border: none;
+  }
+}
+
+/* Main and Footer */
+main {
+  background-color: #fcf1dd;
+  padding: 5%;
+}
+
+.footer {
+  max-width: 100%;
+}
+
+.info-bar {
+  height: 20px;
+  color: black;
+  background-color: #da3f7c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.info-bar .center {
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.info-bar .left {
+  flex: 1;
+  margin-left: 5px;
+}
+
+.info-bar .right {
+  flex: 1;
+  text-align: right;
+  margin-right: 5px;
+}
